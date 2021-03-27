@@ -1,65 +1,28 @@
-import Head from 'next/head'
-import styles from '../styles/Home.module.css'
-
-export default function Home() {
+import CompanyHome from "../components/CompanyHome";
+import Link from 'next/link'
+const index = () => {
+  
   return (
-    <div className={styles.container}>
-      <Head>
-        <title>Create Next App</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
-
-      <main className={styles.main}>
-        <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
-        </h1>
-
-        <p className={styles.description}>
-          Get started by editing{' '}
-          <code className={styles.code}>pages/index.js</code>
-        </p>
-
-        <div className={styles.grid}>
-          <a href="https://nextjs.org/docs" className={styles.card}>
-            <h3>Documentation &rarr;</h3>
-            <p>Find in-depth information about Next.js features and API.</p>
-          </a>
-
-          <a href="https://nextjs.org/learn" className={styles.card}>
-            <h3>Learn &rarr;</h3>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
-
-          <a
-            href="https://github.com/vercel/next.js/tree/master/examples"
-            className={styles.card}
-          >
-            <h3>Examples &rarr;</h3>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
-          </a>
-
-          <a
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-          >
-            <h3>Deploy &rarr;</h3>
-            <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a>
+    <div className ='container'> 
+    <br/>
+        <div className='contain'>
+          <img src='images/apple.png' className='im'></img>
+          <img src='images/google.png' className='im'></img> 
+          <img src='images/amazon.png' className = 'im'></img>
+          <img src='images/netflix.png' className = 'im'></img>
+        </div><br/>
+        <center><h2>Get Your Dream Job</h2></center> <br></br>
+        <h3>Available Companies</h3><br/>
+        <div className='gr'>
+          <a href='/apple/apple'><CompanyHome name='Apple' source='images/apple.png'></CompanyHome></a>
+          <a href='/Google/google'><CompanyHome name='Google' source='images/google.png'></CompanyHome></a>
+          <a href='/amazon/'><CompanyHome name='Amazon' source='images/amazon.png'></CompanyHome></a>
+          <a href='/netflix/'><CompanyHome name='Netflix' source='images/netflix.png'></CompanyHome></a>
+          <a href='/Facebook/'><CompanyHome name='Facebook' source='images/facebook.png'></CompanyHome></a>
+          <a href='/microsoft'><CompanyHome name='Microsoft' source='images/microsoft.png'></CompanyHome></a>
         </div>
-      </main>
-
-      <footer className={styles.footer}>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <img src="/vercel.svg" alt="Vercel Logo" className={styles.logo} />
-        </a>
-      </footer>
     </div>
-  )
+  );
 }
+
+export default index; <h1>Some Name</h1>

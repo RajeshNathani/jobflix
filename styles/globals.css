@@ -14,3 +14,65 @@ a {
 * {
   box-sizing: border-box;
 }
+.im{
+  height: 5vh;
+}
+.company{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.contain{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.gr{
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+}
+.gr img{
+  height: 15vh;
+}
+progress {
+  border: none;
+  width: 100%;
+  background: #007bff;
+}
+
+progress {
+  color: lightblue;
+}
+
+progress::-webkit-progress-value {
+  background: lightblue;
+}
+
+progress::-moz-progress-bar {
+  background: lightcolor;
+}
+
+progress::-webkit-progress-value {
+  background: #007bff;
+}
+
+progress::-webkit-progress-bar {
+  background: gray;
+}
+.comp-grid{
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+@media(max-width:500px){
+  .gr{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .comp-grid{
+    display: grid;
+    grid-template-columns: 100%;
+  }
+}
