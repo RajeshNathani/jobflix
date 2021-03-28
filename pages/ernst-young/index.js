@@ -1,6 +1,6 @@
 import Card from '../../components/Card'
 import ap_review from '../../reviews'
-const apple = () => {
+const ernstyoung = () => {
     var value = 0;
     const reviews = [{name: 'Rajesh', review: 'Great Company'}]
     function add(){
@@ -23,13 +23,13 @@ const apple = () => {
     }
     return (
         <div className='container'><br/>
-            <h1>Apple &nbsp;<img src='../images/apple.png' className='im'></img></h1><br/><br/>
-            <p className='lead'>Apple Inc. is an American multinational technology company headquartered in Cupertino, California, that designs, develops, and sells consumer electronics, computer software, and online services.</p>
+            <h1>Ernst and Young &nbsp;<img src='../images/ernst-young.png' className='im'></img></h1><br/><br/>
+            <p className='lead'>ernst and young Inc. is an American multinational technology company headquartered in Cupertino, California, that designs, develops, and sells consumer electronics, computer software, and online services.</p>
             <br/>  <div className='comp-grid'>
-                <Card title='Interview Questions' text='Practice Apple Interview Questions' link='/apple/interview' link_text= 'Click Here' width='75'></Card>
-                <Card title='Resources' text='View Resources' link='/apple/resources' link_text= 'Click Here' width='75'></Card>
+                <Card title='Interview Questions' text='Practice ernst and young Interview Questions' link='/ernst-young/interview' link_text= 'Click Here' width='75'></Card>
+                <Card title='Resources' text='View Resources' link='/ernst-young/resources' link_text= 'Click Here' width='75'></Card>
             </div><br/>
-            <Card title='Job Openings' text='Job Openings @Apple' link_text= 'Click Here' width='100' link='/apple/jobs'></Card>
+            <Card title='Job Openings' text='Job Openings @ernst and young' link_text= 'Click Here' width='100' link='/ernst-young/jobs'></Card>
             <br/>
             <h2>Reviews</h2> <hr/>
             <div id='rev'>
@@ -42,5 +42,5 @@ const apple = () => {
     );
 }
 
-export default apple;
+export default ernstyoung;
 

@@ -64,6 +64,11 @@ progress::-webkit-progress-bar {
   display: grid;
   grid-template-columns: 50% 50%;
 }
+.re-grid{
+  display: grid;
+  grid-template-columns: 45% 45%;
+  grid-gap: 2rem;
+}
 @media(max-width:500px){
   .gr{
     display: flex;
@@ -71,6 +76,7 @@ progress::-webkit-progress-bar {
     justify-content: center;
     align-items: center;
   }
+  
   .comp-grid{
     display: grid;
     grid-template-columns: 100%;

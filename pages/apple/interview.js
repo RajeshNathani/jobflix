@@ -1,4 +1,4 @@
-import server from '../../config/'
+import server from '../../config/server'
 import Tracker from '../../components/Tracker'
 const interview = (props) => {
   var value = 0;
@@ -37,7 +37,7 @@ const interview = (props) => {
 export default interview;
 
 export async function getStaticProps() {
-    const res = await fetch(`http://localhost:3000/api/interview/apple`,
+    const res = await fetch(`${server}/api/interview/apple`,
     {
       method: "GET",
       headers: {

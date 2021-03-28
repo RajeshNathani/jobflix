@@ -1,4 +1,6 @@
 import Tracker from '../../components/Tracker'
+import server from '../../config/server'
+
 const interview = (props) => {
   var value = 0;
   var checks=[1]
@@ -36,7 +38,7 @@ const interview = (props) => {
 export default interview;
 
 export async function getStaticProps() {
-    const res = await fetch(`http://localhost:3000/api/interview/facebook`)
+    const res = await fetch(`${server}/api/interview/facebook`)
     const questions = await res.json()
     return {
       props: {questions}, 

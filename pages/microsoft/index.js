@@ -1,14 +1,17 @@
 import Card from '../../components/Card'
 
-const apple = () => {
+const microsoft = () => {
     var value = 0;
-    function w(){
+    const reviews = [{name: 'Rajesh', review: 'Great Company'}]
+    function add(){
         if(process.browser){
-            var elem = document.getElementById("progress");
-            elem.setAttribute('value', value+10)
-            value+=10;
-        }
+        var name = document.getElementById('rname').value;
+        var review = document.getElementById('review').value;
+        reviews.push({name: name, review: review})
         
+                var elem = document.getElementById("rev");
+                elem.innerHTML += `<h4>${reviews.slice(-1)[0].name}</h4><h5>${reviews.slice(-1)[0].review}</h5><br/><hr>`;            
+        }
     }
     return (
         <div className='container'><br/>
@@ -16,11 +19,19 @@ const apple = () => {
             <p className='lead'>Microsoft Corporation is an American multinational technology company with headquarters in Redmond, Washington. It develops, manufactures, licenses, supports, and sells computer software, consumer electronics, personal computers, and related services.</p>
             <br/>  <div className='comp-grid'>
                 <Card title='Interview Questions' text='Practice Microsoft Interview Questions' link='/microsoft/interview' link_text= 'Click Here' width='75'></Card>
-                <Card title='Resources' text='Practice Microsoft Interview Questions' link_text= 'Click Here' width='75'></Card>
+                <Card title='Resources' text='View Resources' link='/microsoft/resources/' link_text= 'Click Here' width='75'></Card>
             </div><br/>
-            <Card title='Job Openings' text='Practice Microsoft Interview Questions' link_text= 'Click Here' width='100'></Card>
+            <Card title='Job Openings' text='Jobs @Microsoft' link='/microsoft/jobs' link_text= 'Click Here' width='100'></Card><br/>
+            <h2>Reviews</h2> <hr/>
+            <div id='rev'>
+                
+            </div>
+            <input className='form-control' type='text' placeholder='Name' id='rname'></input> <br/>
+            <input className='form-control' type='text' placeholder='Review' id='review'></input> <br/>
+            <button onClick={add} className='btn btn-primary'>Add Review</button>
+ <br/><br/> 
         </div>
     );
 }
 
-export default apple;
+export default microsoft;

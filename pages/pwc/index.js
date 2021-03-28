@@ -1,6 +1,6 @@
 import Card from '../../components/Card'
 import ap_review from '../../reviews'
-const apple = () => {
+const pwc = () => {
     var value = 0;
     const reviews = [{name: 'Rajesh', review: 'Great Company'}]
     function add(){
@@ -23,13 +23,13 @@ const apple = () => {
     }
     return (
         <div className='container'><br/>
-            <h1>Apple &nbsp;<img src='../images/apple.png' className='im'></img></h1><br/><br/>
-            <p className='lead'>Apple Inc. is an American multinational technology company headquartered in Cupertino, California, that designs, develops, and sells consumer electronics, computer software, and online services.</p>
+            <h1>pwc &nbsp;<img src='../images/pwc.png' className='im'></img></h1><br/><br/>
+            <p className='lead'>PricewaterhouseCoopers is a multinational professional services network of firms, operating as partnerships under the PwC brand. PwC ranks as the second-largest professional services network in the world and is considered one of the Big Four accounting firms, along with Deloitte, EY and KPMG.</p>
             <br/>  <div className='comp-grid'>
-                <Card title='Interview Questions' text='Practice Apple Interview Questions' link='/apple/interview' link_text= 'Click Here' width='75'></Card>
-                <Card title='Resources' text='View Resources' link='/apple/resources' link_text= 'Click Here' width='75'></Card>
+                <Card title='Interview Questions' text='Practice pwc Interview Questions' link='/pwc/interview' link_text= 'Click Here' width='75'></Card>
+                <Card title='Resources' text='View Resources' link='/pwc/resources' link_text= 'Click Here' width='75'></Card>
             </div><br/>
-            <Card title='Job Openings' text='Job Openings @Apple' link_text= 'Click Here' width='100' link='/apple/jobs'></Card>
+            <Card title='Job Openings' text='Job Openings @pwc' link_text= 'Click Here' width='100' link='/pwc/jobs'></Card>
             <br/>
             <h2>Reviews</h2> <hr/>
             <div id='rev'>
@@ -42,5 +42,5 @@ const apple = () => {
     );
 }
 
-export default apple;
+export default pwc;
 

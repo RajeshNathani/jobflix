@@ -1,6 +1,5 @@
-import Tracker from '../../components/Tracker'
 import server from '../../config/server'
-
+import Tracker from '../../components/Tracker'
 const interview = (props) => {
   var value = 0;
   var checks=[1]
@@ -26,10 +25,9 @@ const interview = (props) => {
               <tr>
                 <th>Completed</th>
                 <th>Problem</th>
-                <th>URL</th>
               </tr>
             </thead>
-           {props.questions.map(question=>(<tr><td><input type='checkbox' id='cb' onClick={w}></input></td><td>{question.problem}</td><td><a href= {question.url} className='btn btn-primary'> Solve </a></td></tr>))}          
+           {props.questions.map(question=>(<tr><td><input type='checkbox' id='cb' onClick={w}></input></td><td>{question.problem}</td></tr>))}          
           </table>
         </div>
     );
@@ -38,7 +36,18 @@ const interview = (props) => {
 export default interview;
 
 export async function getStaticProps() {
-    const res = await fetch(`${server}/api/interview/apple`)
+    const res = await fetch(`${server}/api/interview/pwc`,
+    {
+      method: "GET",
+      headers: {
+        // update with your user-agent
+        "User-Agent":
+          "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.89 Safari/537.36", 
+        Accept: "application/json; charset=UTF-8",
+      },
+    }
+    )
+    
     const questions = await res.json()
     return {
       props: {questions}, 
