@@ -24,7 +24,7 @@ const ernstyoung = () => {
     return (
         <div className='container'><br/>
             <h1>Ernst and Young &nbsp;<img src='../images/ernst-young.png' className='im'></img></h1><br/><br/>
-            <p className='lead'>ernst and young Inc. is an American multinational technology company headquartered in Cupertino, California, that designs, develops, and sells consumer electronics, computer software, and online services.</p>
+            <p className='lead'>Ernst & Young Global Limited, commonly known as Ernst & Young or simply EY, is a multinational professional services network with headquarters in London, England. EY is one of the largest professional services networks in the world</p>
             <br/>  <div className='comp-grid'>
                 <Card title='Interview Questions' text='Practice ernst and young Interview Questions' link='/ernst-young/interview' link_text= 'Click Here' width='75'></Card>
                 <Card title='Resources' text='View Resources' link='/ernst-young/resources' link_text= 'Click Here' width='75'></Card>
